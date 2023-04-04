@@ -36,6 +36,6 @@ public class Person {
     }
 
     public String toString() {
-        return "Nama:   ${name}\nAlamat:    ${alamat}";
+        return "Nama    : " + name + "\nAlamat  : " + address;
     }
 }

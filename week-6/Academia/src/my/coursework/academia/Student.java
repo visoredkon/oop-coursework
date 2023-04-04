@@ -13,4 +13,14 @@ public class Student extends Person {
     public Student(String name) {
         this(name, "");
     }
+
+    public String toString() {
+        return "Nama    : " + super.getName() + "\nAlamat  : " + super.getAddress();
+    }
+
+    public void addCourseGrade(String course, int grade) {}
+
+    public double getAverageGrade() {
+        return 0.0;
+    }
 }

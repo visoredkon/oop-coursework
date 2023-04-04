@@ -8,7 +8,7 @@ public class App {
         // Membuat objek person2 dengan konstruktor ke-3
         Person person2 = new Person("Saputra");
 
-        System.out.print("\033[H\033[2J");
+        // System.out.print("\033[H\033[2J");
 
         System.out.println("==== PERSON DATA ====");
         System.out.println("Nama    : " + person1.getName());
@@ -18,8 +18,7 @@ public class App {
         person2.setAddress("Kilometer 1");
 
         System.out.println("==== PERSON 2 DATA ====");
-        System.out.println("Nama    : " + person2.getName());
-        System.out.println("Alamat  : " + person2.getAddress());
+        System.out.println(person2.toString());
         System.out.println("=======================\n");
     }
 }
