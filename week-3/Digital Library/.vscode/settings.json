@@ -1,9 +1,0 @@
-{
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "log4j-api-2.20.0.jar",
-        "log4j-core-2.20.0.jar"
-    ]
-}
