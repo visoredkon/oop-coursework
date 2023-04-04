@@ -27,7 +27,7 @@ public class Person {
 
     // Method untuk mengambil data user
     public Object[] getUser() {
-        return new Object[]{name, address};
+        return new Object[] {name, address};
     }
 
     // Method untuk menambahkan user

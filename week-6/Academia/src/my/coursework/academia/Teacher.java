@@ -1,5 +1,3 @@
 package my.coursework.academia;
 
-public class Teacher {
-
-}
+public class Teacher {}
