@@ -1,19 +1,20 @@
+// Package lokasi class berada
 package my.coursework.academia;
 
-// Deklarasi class DigitalLibrary
+// Deklarasi class Person
 public class Person {
     // Deklarasi variabel instance
-    public String name, address;
+    private String name, address;
 
     // Konstruktor ke-1 dengan 2 parameter
     public Person(String name, String address) {
-        this.name = name;
-        this.address = address;
+        this.name = name == null ? "" : name;
+        this.address = address == null ? "" : address;
     }
 
     // Konstruktor ke-2 dengan 1 parameter
     public Person(String name) {
-        this(name, "");
+        this(name, null);
     }
 
     // Method untuk mengambil nama
@@ -21,6 +22,7 @@ public class Person {
         return name;
     }
 
+    // Mehtod untuk mengambil alamat
     public String getAddress() {
         return address;
     }
@@ -35,7 +37,14 @@ public class Person {
         this.address = address;
     }
 
+    // Method untuk mengembalikan value dalam bentuk string
     public String toString() {
-        return "Nama    : " + name + "\nAlamat  : " + address;
+        return """
+            ======= PERSON DATA =======
+            Name    : %s
+            Address : %s
+            ===========================
+            """
+                .formatted(name, address);
     }
 }
